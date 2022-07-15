@@ -1,0 +1,297 @@
+{
+	id: "199DB27DAA5DBED8"
+	group: ""
+	order_index: 0
+	filename: "a_new_beginning"
+	title: "The Overworld"
+	icon: "minecraft:grass_block"
+	default_quest_shape: "square"
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "The Beginning!"
+			icon: "minecraft:grass_block"
+			x: -1.5d
+			y: 1.0d
+			id: "7AB5EA68B6C4B8C8"
+			tasks: [{
+				id: "7CD52E1D2BAF4A81"
+				type: "dimension"
+				title: "A Brand New Experience Awaits"
+				icon: "minecraft:grass_block"
+				dimension: "minecraft:overworld"
+			}]
+			rewards: [
+				{
+					id: "4FB230FB8AFB4A96"
+					type: "item"
+					item: {
+						id: "minecraft:written_book"
+						Count: 1b
+						tag: {
+							pages: ["{\"text\":\"Welcome to the Better Minecraft Modpack!\\nThe Quests will guide you how to fight the Bosses and Progress through the different Dimensions. The rest is up to you to Explore and Experience this wonderfull NEW World full of AMAZAING Mods!\\n\"}"]
+							RepairCost: 0
+							title: "A New Adventure"
+							author: "SharkieLPS"
+							display: {
+								Name: "{\"text\":\"Your NEW Adventure!\"}"
+							}
+						}
+					}
+				}
+				{
+					id: "467477B7ED8F8D79"
+					type: "item"
+					item: "alexsmobs:animal_dictionary"
+				}
+			]
+		}
+		{
+			title: "Seek the Gatekeeper and Obtain a Blue Journal"
+			x: 9.0d
+			y: 1.0d
+			description: ["Find the Gatekeeper and trade a book in exchange for his journal. You can find the houses spawning in either plains, mountains, and most snowy biomes."]
+			dependencies: ["7AB5EA68B6C4B8C8"]
+			dependency_requirement: "all_started"
+			id: "2CFFA8F63789D45C"
+			tasks: [{
+				id: "4EFF236D6574E6A0"
+				type: "item"
+				item: "blue_skies:blue_journal"
+			}]
+			rewards: [
+				{
+					id: "3A5721D1248FFC3A"
+					type: "item"
+					item: {
+						id: "blue_skies:turquoise_stonebrick"
+						Count: 1b
+						tag: {
+							RepairCost: 0
+							display: {
+								Name: "{\"text\":\"Everbright Portal Blocks\"}"
+							}
+						}
+					}
+					count: 12
+				}
+				{
+					id: "310A6ECBDE72BF00"
+					type: "item"
+					item: {
+						id: "blue_skies:lunar_stonebrick"
+						Count: 1b
+						tag: {
+							RepairCost: 0
+							display: {
+								Name: "{\"text\":\"Everdawn Portal Blocks\"}"
+							}
+						}
+					}
+					count: 12
+				}
+				{
+					id: "1535E09D63CA5541"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			x: 3.0d
+			y: 1.0d
+			description: ["(ba-ra-KO-ah) Roaming the savanna, the Barakoa travel in small hunting packs. They are one with the masks on their heads, which cannot be removed. "]
+			id: "41776844B3411027"
+			tasks: [{
+				id: "4958128596797A78"
+				type: "kill"
+				title: "Kill Barako"
+				icon: "mowziesmobs:barako_mask"
+				entity: "mowziesmobs:barako"
+				value: 1L
+			}]
+			rewards: [
+				{
+					id: "21CA872064E12987"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "5B52151F729952EB"
+					type: "item"
+					item: {
+						id: "combustivefishing:blazing_fishing_rod"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "774FD3A69E4E8550"
+					type: "item"
+					item: "villagertools:lure"
+				}
+			]
+		}
+		{
+			x: 4.5d
+			y: 1.0d
+			description: ["(FER-us RAWT-nawt) Lost underground many years ago, these heavily armored knights are not men nor are they statues."]
+			id: "39AEB9675827F8F0"
+			tasks: [{
+				id: "4509A140F2A4633B"
+				type: "kill"
+				title: "Kill The Ferrous Wroughtnaut"
+				icon: "mowziesmobs:wrought_helmet"
+				entity: "mowziesmobs:ferrous_wroughtnaut"
+				value: 1L
+			}]
+			rewards: [
+				{
+					id: "13A6B97BF98AEECB"
+					type: "item"
+					item: {
+						id: "minecraft:nether_star"
+						Count: 1b
+						tag: {
+							RepairCost: 0
+							display: {
+								Name: "{\"text\":\"It can be used to Summon a Boss\"}"
+							}
+						}
+					}
+				}
+				{
+					id: "1F743FEABA66E99D"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			x: 6.0d
+			y: 1.0d
+			description: ["(FROST-mah) Frostmaws are dangerous beasts found rarely in snowy areas. Their massive size, impressive speed, and powerful ice breath make them near-impossible opponents."]
+			id: "3CDA99C1DB4B523E"
+			tasks: [{
+				id: "6C2D4378AEC49594"
+				type: "kill"
+				title: "Kill The Frostmaw"
+				icon: {
+					id: "mowziesmobs:ice_crystal"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+				entity: "mowziesmobs:frostmaw"
+				value: 1L
+			}]
+			rewards: [
+				{
+					id: "173A196019C5CE63"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "7E52CFE5D4D338C2"
+					type: "item"
+					item: {
+						id: "savageandravage:wand_of_freezing"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 7.5d
+			y: 1.0d
+			optional: true
+			id: "03F92FC969CD7A4D"
+			tasks: [{
+				id: "45A243797CF7A08B"
+				type: "advancement"
+				title: "Succesfully Defend a Village"
+				advancement: "minecraft:adventure/hero_of_the_village"
+				criterion: ""
+			}]
+			rewards: [
+				{
+					id: "1F931B17D0762D9A"
+					type: "item"
+					item: "villagertools:knowledge"
+				}
+				{
+					id: "57758CB38D3B930C"
+					type: "item"
+					item: "villagertools:restock"
+				}
+				{
+					id: "57E511BF773A97B2"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			x: 0.0d
+			y: 1.0d
+			description: ["Right click the Light n' Dark Chest with a Diamond at Bedrock Level to Enter the Deeper Dark Dimension!"]
+			id: "7C1F61724E962532"
+			tasks: [{
+				id: "5AAB1D8A9284B905"
+				type: "item"
+				title: "Craft a Light n' Dark Chest"
+				item: "dead_guys_untitled_deep_dark_:unactivated_lightn_dark_block"
+			}]
+			rewards: [
+				{
+					id: "632134BF0A5EC7A2"
+					type: "item"
+					item: "dead_guys_untitled_deep_dark_:sculk_o_finder"
+				}
+				{
+					id: "3486AAC568B5CA9A"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			x: 1.5d
+			y: 1.0d
+			optional: true
+			id: "57C8C9C5F7D6E0F2"
+			tasks: [{
+				id: "5EA9ED09EF2A56DD"
+				type: "kill"
+				title: "Kill the Conjurer"
+				icon: {
+					id: "conjurer_illager:conjurer_hat"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+				entity: "conjurer_illager:conjurer"
+				value: 1L
+			}]
+			rewards: [
+				{
+					id: "3C67B5D22F0D2DA7"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "4FCF14FF7E94CC48"
+					type: "item"
+					item: "terraincognita:notch_carrot"
+				}
+			]
+		}
+	]
+}

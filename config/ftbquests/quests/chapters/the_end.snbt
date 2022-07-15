@@ -1,0 +1,213 @@
+{
+	id: "50EEC609E833AB5F"
+	group: ""
+	order_index: 6
+	filename: "the_end"
+	title: "The End"
+	icon: "minecraft:end_portal_frame"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 0.0d
+			y: 0.0d
+			id: "4D36AAFE17F5CD9C"
+			tasks: [{
+				id: "444AC080F3243355"
+				type: "dimension"
+				title: "Enter The End Dimension"
+				icon: "minecraft:end_portal_frame"
+				dimension: "minecraft:the_end"
+			}]
+			rewards: [
+				{
+					id: "7179CEAEB51C4822"
+					type: "item"
+					item: {
+						id: "minecraft:written_book"
+						Count: 1b
+						tag: {
+							pages: ["{\"text\":\"The End looks much more strange. Defeat the Ender Guardian to gain the items to summon the Void Worm!\\n\\nKill the Void Worm to gain access to The Abyss. The  Abyss is much different to what you have seen. \"}"]
+							title: "The End"
+							author: "SharkieLPS"
+						}
+					}
+				}
+				{
+					id: "1880DB7D9A47D48C"
+					type: "item"
+					item: "minecraft:end_stone"
+					count: 64
+				}
+				{
+					id: "21C05C2D8424F723"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			icon: "minecraft:dragon_head"
+			x: 1.5d
+			y: 0.0d
+			description: ["Defeat the Dragon like normal"]
+			dependencies: ["4D36AAFE17F5CD9C"]
+			dependency_requirement: "all_started"
+			id: "2A51F2BA00FCA9DF"
+			tasks: [{
+				id: "412B85684482E982"
+				type: "kill"
+				title: "Kill The Ender Dragon"
+				icon: "minecraft:dragon_head"
+				entity: "minecraft:ender_dragon"
+				value: 1L
+			}]
+			rewards: [
+				{
+					id: "2142EE70349F1AA8"
+					type: "item"
+					item: "voidtotem:totem_of_void_undying"
+				}
+				{
+					id: "03D5DEF13126F18F"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			title: "Kill The Shelterer and Obtain a Void Crystal"
+			x: 6.0d
+			y: 0.0d
+			description: ["Use TNT to Defeat the Boss"]
+			optional: true
+			id: "0F0E8DF4A4DDA42E"
+			tasks: [{
+				id: "17C877CFA29666FB"
+				type: "item"
+				item: "stalwart_dungeons:void_crystal"
+			}]
+			rewards: [
+				{
+					id: "69EAA6D51C0BD74E"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "19849C9EC2223871"
+					type: "item"
+					item: "minecraft:totem_of_undying"
+				}
+			]
+		}
+		{
+			x: 7.5d
+			y: 0.0d
+			description: ["Use the items from the Ender Guardian Quest to help summon the Void Worm"]
+			dependencies: ["003FFB5759F52361"]
+			id: "43E0AD91C15669D8"
+			tasks: [{
+				id: "679295C74DF4AA03"
+				type: "kill"
+				title: "Summon and Kill The Void Worm"
+				icon: "alexsmobs:void_worm_eye"
+				entity: "alexsmobs:void_worm"
+				value: 1L
+			}]
+			rewards: [
+				{
+					id: "4E62B7D2E7CBB73D"
+					type: "item"
+					item: {
+						id: "patchouli:guide_book"
+						Count: 1b
+						tag: {
+							"patchouli:book": "theabyss:abyssbookitem"
+						}
+					}
+				}
+				{
+					id: "28DCB3F6D77C40A0"
+					type: "item"
+					item: "theabyss:unstable_obsidian"
+					count: 12
+				}
+				{
+					id: "6D7756E459910347"
+					type: "item"
+					item: {
+						id: "theabyss:the_abyss"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "051643AED561203B"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			x: 3.0d
+			y: 0.0d
+			description: ["Can be found in a Ruined Citadel by exploring the End"]
+			dependencies: ["2A51F2BA00FCA9DF"]
+			id: "0DD02A7405A656B1"
+			tasks: [{
+				id: "162F178E44F37430"
+				type: "kill"
+				title: "Kill a Ender Golem"
+				icon: "cataclysm:void_core"
+				entity: "cataclysm:ender_golem"
+				value: 1L
+			}]
+			rewards: [
+				{
+					id: "69593137A1C2E62D"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "1953899124AE6DFB"
+					type: "item"
+					item: "cataclysm:void_core"
+				}
+			]
+		}
+		{
+			x: 4.5d
+			y: 0.0d
+			description: ["Progress through the Maze of the Citadel and you will reach the Ender Guardian"]
+			dependencies: ["0DD02A7405A656B1"]
+			id: "003FFB5759F52361"
+			tasks: [{
+				id: "7A081FC7DE3D4A33"
+				type: "kill"
+				title: "Kill the Ender Guardian"
+				icon: "cataclysm:ender_guardian_spawner"
+				entity: "cataclysm:ender_guardian"
+				value: 1L
+			}]
+			rewards: [
+				{
+					id: "142EF0B6722D1B1D"
+					type: "item"
+					item: "alexsmobs:capsid"
+				}
+				{
+					id: "046437D2EDCEE9D2"
+					type: "item"
+					item: "alexsmobs:mosquito_larva"
+				}
+				{
+					id: "0C8F3DE3784EA3EB"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+	]
+}

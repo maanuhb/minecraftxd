@@ -1,0 +1,26 @@
+{
+	version: 1
+	uuid: "e40eed8adfa93f249bed02cf03d08450"
+	name: "Maanu_H"
+	can_edit: false
+	lock: false
+	auto_pin: false
+	task_progress: {
+		7CD52E1D2BAF4A81: 1
+	}
+	started: {
+		7CD52E1D2BAF4A81: 1657866839494L
+		0000000000000001: 1657866839494L
+		7AB5EA68B6C4B8C8: 1657866839494L
+		199DB27DAA5DBED8: 1657866839494L
+	}
+	completed: {
+		7CD52E1D2BAF4A81: 1657866839494L
+		7AB5EA68B6C4B8C8: 1657866839494L
+	}
+	claimed_rewards: {
+		"e40eed8adfa93f249bed02cf03d08450:4FB230FB8AFB4A96": 1657867005931L
+		"e40eed8adfa93f249bed02cf03d08450:467477B7ED8F8D79": 1657867006835L
+	}
+	pinned_quests: [ ]
+}

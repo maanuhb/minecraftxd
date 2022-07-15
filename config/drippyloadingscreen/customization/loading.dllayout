@@ -1,0 +1,47 @@
+type = hud
+
+customization-meta {
+  randomgroup = 1
+  keepaspectratio = false
+  backgroundimage = resourcepacks/Graphics/loading.png
+  renderorder = foreground
+  randommode = false
+  randomonlyfirsttime = false
+}
+
+customization {
+  visible = false
+  action = editlogo
+}
+
+customization {
+  x = 3
+  textcolor = #000000
+  action = editforgestatustext
+  y = -1
+}
+
+customization {
+  x = 3
+  textcolor = #000000
+  action = editforgememoryinfo
+  y = 3
+}
+
+customization {
+  action = editprogressbar
+  y = -58
+  barcolor = #000000
+}
+
+customization {
+  path = resourcepacks/Graphics/studio.png
+  orientation = top-right
+  x = -19
+  width = 177
+  action = addtexture
+  actionid = 872927e2-13cf-4e97-94d6-c4e4094716cc1631663398177
+  y = -2
+  height = 100
+}
+

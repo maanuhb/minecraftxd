@@ -1,0 +1,19 @@
+{
+	id: "e40eed8a-dfa9-3f24-9bed-02cf03d08450"
+	type: "player"
+	player_name: "Maanu_H"
+	ranks: {
+		e40eed8a-dfa9-3f24-9bed-02cf03d08450: "owner"
+	}
+	properties: {
+		"ftbteams:display_name": "Maanu_H"
+		"ftbteams:color": "#597FFF"
+		"ftbchunks:block_edit_mode": "allies"
+		"ftbchunks:block_interact_mode": "allies"
+		"ftbteams:description": ""
+		"ftbteams:free_to_join": 0b
+		"ftbchunks:allow_fake_players": 1b
+	}
+	message_history: [ ]
+	extra: { }
+}
